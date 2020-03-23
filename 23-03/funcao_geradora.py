@@ -12,9 +12,9 @@ y_list = []
 for _ in range(50):
     # loc = media, scale = variancia
     x1 = np.random.normal(loc=10.5, scale=12)
-    x2 = np.random.normal(loc=23.123, scale=21.3)
+    x2 = np.random.normal(loc=-23.123, scale=21.3)
     x3 = np.random.normal(loc=41.77, scale=7.56)
-    x4 = np.random.normal(loc=36.54, scale=44.44)
+    x4 = np.random.normal(loc=-36.54, scale=44.44)
     x5 = np.random.normal(loc=64.123, scale=31.51)
     x6 = np.random.normal(loc=0, scale=1.0)
 
@@ -38,4 +38,4 @@ df = pd.DataFrame({'x1': x1_list,
                     'x5': x5_list,
                     'x6': x6_list,
                     'y': y_list})
-df.to_csv("gerados.csv", index=False)
+df.to_csv("gerados2.csv", index=False)
