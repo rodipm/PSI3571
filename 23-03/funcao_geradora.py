@@ -38,4 +38,4 @@ df = pd.DataFrame({'x1': x1_list,
                     'x5': x5_list,
                     'x6': x6_list,
                     'y': y_list})
-df.to_csv("gerados2.csv", index=False)
+df.to_csv("gerados.csv", index=False)
