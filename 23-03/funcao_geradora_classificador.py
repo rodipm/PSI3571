@@ -14,6 +14,8 @@ for i in range(len(dataset.index)):
     x6 = dataset['x6'][i]
     y_binario_list.append(np.sign(3*9*x1 - 4*3*x2 + 5*4*x3 - 6*8*x4 + 8*x5 + 7*x6))
 
+print(y_binario_list.count(-1))
+
 y_binario_df = pd.DataFrame({'y_binario': y_binario_list})
 
 dataset = dataset.join(y_binario_df)

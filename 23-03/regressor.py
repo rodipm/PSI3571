@@ -3,7 +3,6 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# column_names = ['x1','x2','x3','x4','x5', 'x6', 'y']
 raw_dataset = pd.read_csv("gerados.csv")
 
 dataset = raw_dataset.copy()
